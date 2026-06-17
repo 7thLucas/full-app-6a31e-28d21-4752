@@ -1,0 +1,53 @@
+<style>
+.mode-landscape .sl-layout { flex-direction: row; }
+.mode-portrait .sl-layout { flex-direction: column; }
+.mode-landscape .sl-left { width: 52%; }
+.mode-landscape .sl-right { width: 48%; }
+.mode-portrait .sl-left { flex: 1; width: 100%; }
+.mode-portrait .sl-right { width: 100%; height: 40%; }
+</style>
+<section class="w-full h-full bg-white overflow-auto">
+  <div class="sl-layout flex h-full">
+
+    <!-- Left: Content -->
+    <div class="sl-left flex flex-col justify-between p-12 bg-white">
+      <div>
+        <span class="inline-block bg-indigo-50 border border-indigo-200 text-indigo-700 text-xs font-bold tracking-widest uppercase px-4 py-1.5 rounded-full mb-8">
+          Arabic Educational Technology
+        </span>
+        <h1 class="text-5xl font-black text-slate-900 leading-tight mb-5">
+          The Right Text,<br/>Every Lesson.
+        </h1>
+        <p class="text-lg text-slate-500 leading-relaxed max-w-xs">
+          Intelligent Arabic reading-text discovery for preparatory secondary classrooms — filtered by genre, matched to level.
+        </p>
+        <div class="flex flex-wrap gap-2 mt-7">
+          <span class="bg-indigo-100 text-indigo-800 text-xs font-semibold px-3 py-1 rounded-full">سردي · Narrative</span>
+          <span class="bg-cyan-100 text-cyan-800 text-xs font-semibold px-3 py-1 rounded-full">وصفي · Descriptive</span>
+          <span class="bg-amber-100 text-amber-800 text-xs font-semibold px-3 py-1 rounded-full">حجاجي · Argumentative</span>
+          <span class="bg-emerald-100 text-emerald-800 text-xs font-semibold px-3 py-1 rounded-full">معلوماتي · Expository</span>
+          <span class="bg-purple-100 text-purple-800 text-xs font-semibold px-3 py-1 rounded-full">أدبي · Literary</span>
+        </div>
+      </div>
+      <div>
+        <div class="flex items-baseline gap-3 mb-3">
+          <span class="text-3xl font-black text-indigo-700" dir="rtl">نصوص</span>
+          <span class="text-sm text-slate-400 font-medium tracking-wide">Nusus · Reading Discovery</span>
+        </div>
+        <data-attribution />
+      </div>
+    </div>
+
+    <!-- Right: Visual -->
+    <div class="sl-right relative overflow-hidden">
+      <img
+        src="https://api.qb-deck.quantumbyte.ai/common/image-generation?prompt=Bright%20modern%20Arabic%20classroom%20with%20students%20reading%20books%20and%20tablets%2C%20warm%20golden%20light%2C%20editorial%20photography%2C%20calm%20focused%20learning%20atmosphere%2C%20high%20quality"
+        alt="Students reading in a modern classroom"
+        class="w-full h-full object-cover"
+      />
+      <div class="absolute inset-y-0 left-0 w-20 bg-gradient-to-r from-white to-transparent"></div>
+      <div class="absolute bottom-0 left-0 right-0 h-1.5 bg-indigo-600"></div>
+    </div>
+
+  </div>
+</section>
