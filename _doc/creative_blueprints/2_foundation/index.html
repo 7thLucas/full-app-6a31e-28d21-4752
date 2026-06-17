@@ -1,0 +1,70 @@
+<style>
+.mode-landscape .sl-layout { flex-direction: row; }
+.mode-portrait .sl-layout { flex-direction: column; }
+.mode-landscape .sl-main { width: 60%; }
+.mode-landscape .sl-visual { width: 40%; }
+.mode-portrait .sl-main { width: 100%; flex: 1; }
+.mode-portrait .sl-visual { display: none; }
+</style>
+<section class="w-full h-full bg-white overflow-auto">
+  <div class="sl-layout flex h-full">
+
+    <!-- Left: Problem + Solution -->
+    <div class="sl-main flex flex-col p-12 gap-5">
+      <div>
+        <span class="text-xs font-bold tracking-widest uppercase text-indigo-600">Foundation</span>
+        <h2 class="text-3xl font-black text-slate-900 mt-1 leading-tight">
+          Where the gap lives —<br/>and how we close it.
+        </h2>
+      </div>
+
+      <div class="flex-1 flex flex-col gap-4">
+
+        <!-- Problem Zone -->
+        <div class="flex-1 bg-red-50 border border-red-200 rounded-2xl p-6">
+          <span class="inline-block bg-red-500 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide mb-3">The Problem</span>
+          <p class="text-slate-800 text-sm leading-relaxed">
+            Arabic language teachers at the preparatory secondary level spend an estimated
+            <strong>2–3 hours per week</strong> manually browsing scattered internet sources
+            for reading texts. No dedicated tool exists that filters texts by type and reading
+            level for <strong>الثانوي الإعدادي</strong> — leaving educators to sift through
+            irrelevant, off-level results with no efficient alternative.
+          </p>
+          <div class="grid grid-cols-2 gap-3 mt-4">
+            <div class="bg-white border border-red-200 rounded-xl p-3 text-center">
+              <div class="text-2xl font-black text-red-600">2–3 hrs</div>
+              <div class="text-xs text-slate-500 mt-1">estimated weekly per teacher on manual text search</div>
+            </div>
+            <div class="bg-white border border-red-200 rounded-xl p-3 text-center">
+              <div class="text-2xl font-black text-red-600">0</div>
+              <div class="text-xs text-slate-500 mt-1">dedicated Arabic reading-text discovery tools by type &amp; level</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Solution Zone -->
+        <div class="flex-1 bg-indigo-50 border border-indigo-200 rounded-2xl p-6">
+          <span class="inline-block bg-indigo-600 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide mb-3">The Solution</span>
+          <p class="text-slate-800 text-sm leading-relaxed">
+            <strong class="text-indigo-700">نصوص</strong> aggregates Arabic reading texts from
+            across the internet and presents them filtered by text type (narrative, descriptive,
+            argumentative, expository, literary) and calibrated to the preparatory secondary
+            level — so teachers find a lesson-ready text in under <strong>60 seconds</strong>.
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Right: Visual -->
+    <div class="sl-visual relative overflow-hidden bg-slate-100">
+      <img
+        src="https://api.qb-deck.quantumbyte.ai/common/image-generation?prompt=Arabic%20language%20teacher%20at%20desk%20surrounded%20by%20books%20and%20papers%2C%20working%20on%20laptop%2C%20warm%20office%20lighting%2C%20educational%20setting%2C%20editorial%20photography%2C%20thoughtful%20expression"
+        alt="Teacher preparing lesson materials"
+        class="w-full h-full object-cover"
+      />
+      <div class="absolute inset-y-0 left-0 w-16 bg-gradient-to-r from-white to-transparent"></div>
+    </div>
+
+  </div>
+</section>
