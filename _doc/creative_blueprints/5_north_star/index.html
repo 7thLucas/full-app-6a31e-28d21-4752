@@ -1,0 +1,107 @@
+<style>
+.mode-landscape .sl-grid { grid-template-columns: 1fr 1fr; }
+.mode-portrait .sl-grid { grid-template-columns: 1fr; }
+</style>
+<section class="w-full h-full bg-white overflow-auto">
+  <div class="flex flex-col h-full p-10 gap-5">
+
+    <!-- Header -->
+    <div class="flex items-center justify-between gap-4">
+      <div>
+        <span class="text-xs font-bold tracking-widest uppercase text-indigo-600">North Star</span>
+        <h2 class="text-3xl font-black text-slate-900 mt-1">The one number that proves this works.</h2>
+      </div>
+      <span class="bg-amber-50 border border-amber-300 text-amber-700 text-xs font-bold px-4 py-2 rounded-full whitespace-nowrap shrink-0">
+        Projected impact — based on your inputs
+      </span>
+    </div>
+
+    <!-- Main Grid -->
+    <div class="sl-grid grid gap-5 flex-1">
+
+      <!-- Left Column -->
+      <div class="flex flex-col gap-4">
+
+        <!-- Verified Operation -->
+        <div class="bg-slate-50 border border-slate-200 rounded-2xl p-5">
+          <h3 class="text-xs font-bold uppercase tracking-widest text-slate-500 mb-4">Verified Operation</h3>
+          <div class="flex items-start gap-4">
+            <div class="bg-indigo-600 text-white font-black w-10 h-10 rounded-xl flex items-center justify-center text-lg shrink-0">✓</div>
+            <div>
+              <div class="text-base font-bold text-slate-900">Text Search Completed</div>
+              <div class="text-sm text-indigo-600 font-semibold mt-0.5" dir="rtl">بحث نصي مكتمل</div>
+              <div class="text-xs text-slate-500 mt-2 leading-relaxed">A teacher or student submits a text-type or keyword query and the app returns at least one usable, level-appropriate Arabic reading result.</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- WVO Formula -->
+        <div class="bg-indigo-50 border border-indigo-200 rounded-2xl p-5 flex-1">
+          <h3 class="text-xs font-bold uppercase tracking-widest text-indigo-600 mb-4">Weekly Verified Operations</h3>
+          <div class="flex items-center gap-3 flex-wrap mb-4">
+            <div class="bg-amber-100 border border-amber-300 rounded-xl px-4 py-2 text-center">
+              <div class="text-2xl font-black text-amber-900">5</div>
+              <div class="text-xs font-semibold text-amber-700">teachers</div>
+              <div class="text-xs text-amber-500 mt-0.5">Assumption ↕</div>
+            </div>
+            <span class="text-2xl font-black text-slate-400">×</span>
+            <div class="bg-amber-100 border border-amber-300 rounded-xl px-4 py-2 text-center">
+              <div class="text-2xl font-black text-amber-900">4</div>
+              <div class="text-xs font-semibold text-amber-700">searches / week</div>
+              <div class="text-xs text-amber-500 mt-0.5">Assumption ↕</div>
+            </div>
+            <span class="text-2xl font-black text-slate-400">=</span>
+            <div class="bg-indigo-700 text-white rounded-xl px-4 py-2 text-center">
+              <div class="text-2xl font-black">20</div>
+              <div class="text-xs font-semibold">WVO / week</div>
+            </div>
+          </div>
+          <div class="text-xs text-indigo-700 font-semibold">
+            Annual: 20 WVO/week × 40 school weeks = <strong>800 searches resolved per year</strong>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Right Column -->
+      <div class="flex flex-col gap-4">
+
+        <!-- Value per Operation -->
+        <div class="bg-emerald-50 border border-emerald-200 rounded-2xl p-5">
+          <h3 class="text-xs font-bold uppercase tracking-widest text-emerald-600 mb-3">Value per Operation</h3>
+          <div class="text-sm text-slate-700 leading-relaxed">
+            2 hrs saved/week ÷ 4 searches/week = <strong class="text-emerald-800">30 min saved per search</strong>
+          </div>
+          <div class="text-xs text-slate-500 mt-2 leading-relaxed">Each completed search returns approximately 30 minutes that would otherwise be spent on manual browsing.</div>
+        </div>
+
+        <!-- Total Value -->
+        <div class="bg-indigo-700 rounded-2xl p-6 flex-1 flex flex-col justify-between">
+          <div>
+            <h3 class="text-xs font-bold uppercase tracking-widest text-indigo-300 mb-3">Total Time Reclaimed</h3>
+            <div class="flex items-baseline gap-2">
+              <span class="text-5xl font-black text-white">400</span>
+              <span class="text-indigo-200 text-xl font-semibold">hrs / year</span>
+            </div>
+            <p class="text-indigo-200 text-xs mt-3 leading-relaxed">
+              20 WVO/week × 30 min saved × 40 school weeks<br/>
+              = <strong class="text-white">400 teacher-hours returned annually</strong>
+            </p>
+          </div>
+          <div class="bg-indigo-600 rounded-xl p-3 mt-3">
+            <div class="text-xs text-indigo-200">What that means:</div>
+            <div class="text-sm font-bold text-white mt-1">400 hours of teacher time shifted from searching to teaching, every year.</div>
+          </div>
+        </div>
+
+        <!-- Assumption Notice -->
+        <div class="flex items-start gap-2 bg-amber-50 border border-amber-200 rounded-xl p-3">
+          <span class="text-amber-500 text-sm shrink-0">⚠</span>
+          <span class="text-xs text-amber-700 font-medium leading-relaxed">All figures are projections. Update teacher count and searches/week above to reflect your school's actual usage.</span>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
